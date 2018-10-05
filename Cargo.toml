@@ -21,7 +21,7 @@ gelpia_utils = { path = "src/gelpia_utils" }
 ga = { path = "src/ga" }
 args = { path = "src/args" }
 function = { path = "src/function" }
-getopts = "0.2.*"
+getopts = "0.2.18"
 rand = "0.3.*"
 time = "*"
 threadpool = "1.3.*"
@@ -29,6 +29,9 @@ num_cpus = "0.*"
 
 [dependencies.scoped_threadpool]
 git = "https://github.com/Kimundi/scoped-threadpool-rs"
+
+[replace]
+"getopts:0.2.18" = { git = "https://github.com/mfeliu/getopts" }
 
 [profile.release]
 opt-level = 3
